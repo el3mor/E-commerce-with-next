@@ -4,6 +4,7 @@ import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js';
 import CheckoutForm from './_components/CheckoutForm';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from "react"
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -24,6 +25,7 @@ const CheckoutPage = () => {
           amount: searchParams.get('amount') * 100,
           currency: "usd",
         }}>
+          
           <CheckoutForm  amount={Number(searchParams.get('amount'))} />
         </Elements>
 
