@@ -24,7 +24,7 @@ export const EmailTemplate = ({
 		<Body style={main}>
 			<Container style={container}>
 				<Img
-					src='https://res.cloudinary.com/ddfzikgiz/image/upload/v1704687428/itelm_ryakt_f_50_dqyqh_e31f29dc71.png'
+					src='https://res.cloudinary.com/drcfjpaeh/image/upload/v1733001854/istockphoto-1349379191-612x612_c4lkmb.jpg'
 					width="420"
 					height="300"
 					alt="Koala"
